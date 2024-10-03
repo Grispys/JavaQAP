@@ -16,7 +16,7 @@ public class Money {
     public Money add(Money otherObject){
         this.dollars = (this.dollars + otherObject.dollars);
         this.cents = (this.cents + otherObject.cents);
-        double newTotal = this.dollars;
+        double newTotal = this.dollars; //+ this.cents;
         return new Money(newTotal);
 
     }
