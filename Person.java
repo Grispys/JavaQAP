@@ -10,6 +10,6 @@ public class Person {
     }
 
     public String toString(){
-        return (firstName +", "+lastName +", " +home);
+        return ("This person is: " + firstName + " " +lastName + ". Residence: " + home);
     }
 }
