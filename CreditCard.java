@@ -3,6 +3,7 @@ public class CreditCard {
     private Money creditLimit;
     private Person owner;
 
+    // creates a new credit card with a balance and limit
     public CreditCard(Person newCardHolder, Money limit){
         this.owner = newCardHolder;
         this.creditLimit = limit;
@@ -20,6 +21,7 @@ public class CreditCard {
     public String getPersonals(){
         return owner.toString();
     }
+    // charges the account by adding the given amount to the balance
     public void charge(Money amount){
        Money newBalance = this.balance.add(amount);
     

@@ -3,6 +3,7 @@ public class Person {
     private String firstName;
     private Address home;
 
+    // assigns each variable to given argument
     public Person(String lastName, String firstname, Address home){
         this.lastName = lastName;
         this.firstName = firstname;

@@ -2,7 +2,7 @@ public class MyPoint {
     private int x;
     private int y;
 
-
+    // sets up mypoint location
     public MyPoint(){
         this.x = 0;
         this.y = 0;
@@ -13,6 +13,7 @@ public class MyPoint {
         this.y = y;
     }
 
+    // bunch of getter and setter functioons for each x and y 
     public int getX(){
         // System.out.println(this.x);
         return x;
@@ -41,6 +42,7 @@ public class MyPoint {
     }
 
 
+    //distance is determined by subtracting desired x from current x, same with y, then taking the square root of x2 + y2
     public double distance(int x, int y){
         int distanceX = this.x - x;
         int distanceY = this.y - y;

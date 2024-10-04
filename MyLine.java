@@ -2,6 +2,7 @@ public class MyLine {
     private MyPoint begin = new MyPoint(1,1);
     private MyPoint end = new MyPoint(2,2);
 
+    //sets up the line coordinates
     public MyLine(int x1, int y1, int x2, int y2){
         this.begin.setX(x1);
         this.begin.setY(y1);
@@ -9,6 +10,7 @@ public class MyLine {
         this.end.setY(y2);
     }
 
+    // all of the individual getter and setter functions
     public MyLine(MyPoint begin, MyPoint end){
         this.begin = begin;
         this.end = end;
@@ -67,6 +69,7 @@ public class MyLine {
         this.end.setY(y);
     }
 
+    //returns XY values in an array
     public int[] getBeginXY(){
         int[] location = new int[2];
         location[0] = this.begin.getX();
@@ -77,7 +80,7 @@ public class MyLine {
     public void setBeginXY(int x, int y){
         this.begin.setXY(x, y);
     }
-
+     //returns XY values in an array
     public int[] getEndXY(){
         int[] location = new int[2];
         location[0] = this.end.getX();
@@ -89,12 +92,14 @@ public class MyLine {
         this.end.setXY(x, y);
     }
 
+    // uses mypoint distance function for length
     public double getLength(){
         double length = this.begin.distance(end);
         System.out.println("Line length is: " + length) ; 
         return length;
     }
 
+    // uses atan2 to determine 
     public double getGradient(){
         int diffX = this.begin.getX() - this.end.getX();
         int diffY = this.begin.getY() - this.end.getY();

@@ -1,6 +1,7 @@
 public class TestMyLine {
     
     public static void main(String[] args) {
+        // testing every single function/method
         MyLine line1 = new MyLine(1, 3, 2, 6);
         System.out.println();
         System.out.println();

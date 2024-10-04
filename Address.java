@@ -4,6 +4,7 @@ public class Address {
     private String state;
     private String zip;
 
+    // creates new address
     public Address(String zip, String street, String city, String state){
         this.zip = zip;
         this.street = street;
