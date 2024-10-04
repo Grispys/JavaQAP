@@ -14,12 +14,12 @@ public class MyPoint {
     }
 
     public int getX(){
-        System.out.println(this.x);
+        // System.out.println(this.x);
         return x;
     }
 
     public int getY(){
-        System.out.println(this.y);
+        // System.out.println(this.y);
         return y;
     }
 

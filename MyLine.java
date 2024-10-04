@@ -3,18 +3,24 @@ public class MyLine {
     private MyPoint end = new MyPoint(2,2);
 
     public MyLine(int x1, int y1, int x2, int y2){
-
+        this.begin.setX(x1);
+        this.begin.setY(y1);
+        this.end.setX(x2);
+        this.end.setY(y2);
     }
 
     public MyLine(MyPoint begin, MyPoint end){
-
+        this.begin = begin;
+        this.end = end;
     }
 
     public MyPoint getBegin(){
+        System.out.println(this.begin);
         return this.begin;
     }
 
     public MyPoint getEnd(){
+        System.out.println(this.end);
         return this.end;
     }
 
@@ -85,6 +91,7 @@ public class MyLine {
 
     public double getLength(){
         double length = this.begin.distance(end);
+        System.out.println("Line length is: " + length) ; 
         return length;
     }
 
@@ -95,9 +102,9 @@ public class MyLine {
         return Math.atan2(diffY, diffX);
     }
 
-
+    @Override
     public String toString(){
-        return "MyLine[begin=()" + this.begin.getX() + "," + this.begin.getY() + "), end=(" + this.end.getX() + "," + this.end.getY() + ")]";
+        return "MyLine[begin=(" + this.begin.getX() + "," + this.begin.getY() + "), end=(" + this.end.getX() + "," + this.end.getY() + ")]";
     }
 
 
