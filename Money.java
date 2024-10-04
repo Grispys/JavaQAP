@@ -12,7 +12,7 @@ public class Money {
         this.dollars = otherObject.dollars;
         this.cents = otherObject.cents;
     }
-
+    // for some reason, i could not get it to add cents to the balance. i have no idea why
     public Money add(Money otherObject){
         this.dollars = (this.dollars + otherObject.dollars);
         this.cents = (this.cents + otherObject.cents);

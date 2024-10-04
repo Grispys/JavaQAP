@@ -24,7 +24,7 @@ public class CreditCard {
        Money newBalance = this.balance.add(amount);
     
     // i could not get this to work "properly" ; it does work as intended now, however it would charged the card twice. now it charges twice still, but the extra amount is immediately removed
-
+    
         if((this.creditLimit.compareTo(newBalance) == -1)){
             System.err.println("YOUR BALANCE WOULD EXCEED YOUR CREDIT LIMIT");
             this.balance.subtract(amount);
